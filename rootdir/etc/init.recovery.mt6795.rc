@@ -1,0 +1,6 @@
+on early-init
+	setenforce permissive
+on boot                                       
+    write /sys/class/android_usb/android0/idVendor 0bb4
+    write /sys/class/android_usb/android0/idProduct 0f90
+    write /sys/class/android_usb/android0/functions mtp,adb,mass_storage
