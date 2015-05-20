@@ -42,7 +42,8 @@ COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
 # TWRP specific build flags
 RECOVERY_VARIANT := twrp
-TWRP_EVENT_LOGGING := true
+#TWRP_EVENT_LOGGING := true
+TW_NO_SCREEN_BLANK := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone1/temp
 #TW_BOARD_CUSTOM_GRAPHICS := ../../../device/htc/htc_hiau_ml_tuhl/recovery/graphics_twrp.c
 DEVICE_RESOLUTION := 1440x2560
